@@ -28,6 +28,6 @@ class School
       students = students.sort!
     end
     # binding.pry
-    @roster
+    self.roster
   end
 end
