@@ -10,17 +10,17 @@ class School
   end
 
   def add_student(student_name, grade)
-    create_grade(grade) unless @roster.has_key?(grade)
-    @roster[grade] << student_name
+    create_grade(grade) unless self.roster.has_key?(grade)
+    self.roster[grade] << student_name
   end
 
   def create_grade(grade)
-    @roster[grade] = []
+    self.roster[grade] = []
   end
 
   def grade(grade)
     # binding.pry
-    @roster[grade]
+    self.roster[grade]
   end
 
   def sort
